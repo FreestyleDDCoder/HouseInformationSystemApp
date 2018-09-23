@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/srl_container2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <dym.unique.com.springinglayoutlibrary.viewgroup.SpringingRelativeLayout
+        android:id="@+id/srl_actionBar2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:translationZ="8dp">
+
+        <dym.unique.com.springinglayoutlibrary.view.SpringingImageView
+            android:id="@+id/simg_back2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </dym.unique.com.springinglayoutlibrary.viewgroup.SpringingRelativeLayout>
+
+    <dym.unique.com.springinglayoutlibrary.viewgroup.SpringingLinearLayout
+        android:id="@+id/sll_mainContainer2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <dym.unique.com.springinglayoutlibrary.view.SpringingImageView
+            android:id="@+id/simg_avatarMan2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:src="@mipmap/default_avatar_man"
+            android:visibility="invisible" />
+
+        <dym.unique.com.springinglayoutlibrary.view.SpringingTextView
+            android:id="@+id/stv_setimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="点击图片设置头像"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:id="@+id/ll_EmailSet"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <dym.unique.com.springinglayoutlibrary.view.SpringingTextView
+                android:id="@+id/stv_Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="邮箱"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <dym.unique.com.springinglayoutlibrary.view.SpringingEditText
+                android:id="@+id/sedt_EmailHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:hint="请设置你的邮箱"
+                android:textColor="#666666"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_account2"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <dym.unique.com.springinglayoutlibrary.view.SpringingTextView
+                android:id="@+id/stv_accountLabel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="昵称"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <dym.unique.com.springinglayoutlibrary.view.SpringingEditText
+                android:id="@+id/sedt_account2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:hint="请输入你的用户名"
+                android:textColor="#666666"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_password2"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <dym.unique.com.springinglayoutlibrary.view.SpringingTextView
+                android:id="@+id/stv_passwordLabel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="密码"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <dym.unique.com.springinglayoutlibrary.view.SpringingEditText
+                android:id="@+id/sedt_password2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:hint="请输入你的密码"
+                android:inputType="textPassword"
+                android:textColor="#666666"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sex"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <dym.unique.com.springinglayoutlibrary.view.SpringingTextView
+                android:id="@+id/stv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="性别"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/boys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:checked="true"
+                android:gravity="center"
+                android:text="男"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/girls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:gravity="center"
+                android:text="女"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <dym.unique.com.springinglayoutlibrary.view.SpringingTextView
+            android:id="@+id/stv_regist"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+
+    </dym.unique.com.springinglayoutlibrary.viewgroup.SpringingLinearLayout>
+
+</LinearLayout>

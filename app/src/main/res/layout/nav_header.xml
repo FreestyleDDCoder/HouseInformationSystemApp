@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dym.unique.com.springinglayoutlibrary.viewgroup.SpringingLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hd_user"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/nav_header_bg"
+    android:orientation="vertical">
+
+    <dym.unique.com.springinglayoutlibrary.view.SpringingImageView
+        android:id="@+id/icon_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:padding="2dp"
+        android:src="@mipmap/default_avatar_man" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <dym.unique.com.springinglayoutlibrary.view.SpringingTextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击登录"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <dym.unique.com.springinglayoutlibrary.view.SpringingImageView
+            android:id="@+id/siv_sexs"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/tv_state" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <dym.unique.com.springinglayoutlibrary.view.SpringingImageView
+            android:id="@+id/logout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:src="@mipmap/logout" />
+    </RelativeLayout>
+</dym.unique.com.springinglayoutlibrary.viewgroup.SpringingLinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_house_information"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    app:cardCornerRadius="4dp">
+
+    <dym.unique.com.springinglayoutlibrary.viewgroup.SpringingLinearLayout
+        android:id="@+id/sll_house_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <dym.unique.com.springinglayoutlibrary.view.SpringingImageView
+            android:id="@+id/siv_house_picture"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible" />
+
+        <dym.unique.com.springinglayoutlibrary.viewgroup.SpringingLinearLayout
+            android:id="@+id/sll_house_information_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <dym.unique.com.springinglayoutlibrary.view.SpringingTextView
+                android:id="@+id/stv_house_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+
+            <dym.unique.com.springinglayoutlibrary.view.SpringingTextView
+                android:id="@+id/stv_house_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+
+            <dym.unique.com.springinglayoutlibrary.view.SpringingTextView
+                android:id="@+id/stv_house_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+
+            <dym.unique.com.springinglayoutlibrary.view.SpringingTextView
+                android:id="@+id/stv_house_kinds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+
+            <dym.unique.com.springinglayoutlibrary.view.SpringingTextView
+                android:id="@+id/stv_house_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:visibility="invisible" />
+        </dym.unique.com.springinglayoutlibrary.viewgroup.SpringingLinearLayout>
+    </dym.unique.com.springinglayoutlibrary.viewgroup.SpringingLinearLayout>
+</android.support.v7.widget.CardView>

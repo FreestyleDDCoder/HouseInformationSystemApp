@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HouseInformationSystem</string>
+    <string name="version">当前版本4.18.18</string>
+    <string name="splash_title">房地产公司楼盘信息系统</string>
+    <string name="splash_content">提供优质楼盘信息</string>
+    <string name="comment">评论</string>
+    <string name="comment_hint">对该楼盘的看法...</string>
+    <string name="search_area"></string>
+    <string name="area_in">输入查询的地区</string>
+</resources>
